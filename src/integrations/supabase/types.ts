@@ -57,11 +57,15 @@ export type Database = {
           key_points: string[]
           published_at: string
           reading_minutes: number
+          scheduled_on: string | null
           slug: string
           sources: Json
           summary: string
+          takeaway: string | null
+          takeaway_kind: string | null
           title: string
           updated_at: string
+          why_today: string | null
         }
         Insert: {
           category_id: string
@@ -75,11 +79,15 @@ export type Database = {
           key_points?: string[]
           published_at?: string
           reading_minutes?: number
+          scheduled_on?: string | null
           slug: string
           sources?: Json
           summary: string
+          takeaway?: string | null
+          takeaway_kind?: string | null
           title: string
           updated_at?: string
+          why_today?: string | null
         }
         Update: {
           category_id?: string
@@ -93,11 +101,15 @@ export type Database = {
           key_points?: string[]
           published_at?: string
           reading_minutes?: number
+          scheduled_on?: string | null
           slug?: string
           sources?: Json
           summary?: string
+          takeaway?: string | null
+          takeaway_kind?: string | null
           title?: string
           updated_at?: string
+          why_today?: string | null
         }
         Relationships: [
           {
