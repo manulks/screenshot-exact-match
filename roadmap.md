@@ -15,3 +15,4 @@
 - [ ] Hors connexion : quiz téléchargés, file locale favoris/résultats, synchro auto au retour réseau
 - [ ] Hors connexion : indicateur d'état, gestion erreurs/conflits, messages clairs (connexion, inscription, paiement)
 - [ ] Tests des règles (tarifs, pubs, file de synchronisation)
+- [ ] Connexion par code e-mail (OTP 6 chiffres, 10 min) + e-mail « magic link » en français affichant le code et le lien
