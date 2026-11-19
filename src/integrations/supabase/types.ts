@@ -383,6 +383,7 @@ export type Database = {
           discovery_id: string
         }[]
       }
+      delete_my_account: { Args: never; Returns: undefined }
       has_role: {
         Args: {
           _role: Database["public"]["Enums"]["app_role"]
