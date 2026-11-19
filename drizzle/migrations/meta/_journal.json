@@ -8,6 +8,13 @@
       "when": 1794983332876,
       "tag": "0000_cultura_schema_v1",
       "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1795101224225,
+      "tag": "0001_relax_own_history_insert_policy",
+      "breakpoints": true
     }
   ]
 }
