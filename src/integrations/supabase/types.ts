@@ -403,6 +403,7 @@ export type Database = {
         }
         Returns: boolean
       }
+      import_lot: { Args: { lot: Json; token: string }; Returns: Json }
       is_premium: { Args: { _user_id: string }; Returns: boolean }
     }
     Enums: {

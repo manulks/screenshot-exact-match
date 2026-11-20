@@ -16,5 +16,4 @@
 - [ ] Hors connexion : indicateur d'état, gestion erreurs/conflits, messages clairs (connexion, inscription, paiement)
 - [ ] Tests des règles (tarifs, pubs, file de synchronisation)
 - [ ] Connexion par code e-mail (OTP 6 chiffres, 10 min) + e-mail « magic link » en français affichant le code et le lien
-- [ ] Mettre à jour les textes de 10 découvertes (titre, intro, résumé, pourquoi aujourd'hui, à retenir)
-- [ ] Fonction d'import de lots de découvertes protégée par jeton (import_lot)
+- [x] Fonction d'import de lots de découvertes protégée par jeton (import_lot)

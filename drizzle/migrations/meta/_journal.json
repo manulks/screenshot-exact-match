@@ -29,6 +29,13 @@
       "when": 1795106424712,
       "tag": "0003_discoveries_takeaway_and_scheduling",
       "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1795133413001,
+      "tag": "0004_create_import_lot_function",
+      "breakpoints": true
     }
   ]
 }
