@@ -44,6 +44,35 @@ export type Database = {
         }
         Relationships: []
       }
+      culture_votes: {
+        Row: {
+          choice: string
+          created_at: string
+          discovery_id: string
+          voter: string
+        }
+        Insert: {
+          choice: string
+          created_at?: string
+          discovery_id: string
+          voter: string
+        }
+        Update: {
+          choice?: string
+          created_at?: string
+          discovery_id?: string
+          voter?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "culture_votes_discovery_id_fkey"
+            columns: ["discovery_id"]
+            isOneToOne: false
+            referencedRelation: "discoveries"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       discoveries: {
         Row: {
           category_id: string
@@ -387,7 +416,21 @@ export type Database = {
         }
         Returns: undefined
       }
+      cast_culture_vote: {
+        Args: { p_choice: string; p_discovery_id: string; p_voter: string }
+        Returns: {
+          choice: string
+          votes: number
+        }[]
+      }
       cultura_today: { Args: never; Returns: string }
+      culture_vote_counts: {
+        Args: { p_discovery_id: string }
+        Returns: {
+          choice: string
+          votes: number
+        }[]
+      }
       daily_discovery_ids: {
         Args: never
         Returns: {

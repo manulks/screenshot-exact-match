@@ -43,6 +43,13 @@
       "when": 1795162766035,
       "tag": "0005_import_lot_auto_create_category",
       "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1795212521965,
+      "tag": "0006_create_culture_votes",
+      "breakpoints": true
     }
   ]
 }
